@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HookMaster — Discord Webhook</title>
-    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBf93p4AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKRSURBVFiF7ZaxbxNREMY/v7vTJo5CAnFFSgRCIXbXREVCYmFAZWhpE6b+BSZWVoYEO0Is7EywIEbEwEC6Vp0QCZHYXbVbLCSKBAKByD/AnXvX4ZpLreTirvS054vudN+973v37vvevXN0zpU8eLw39/w8M8GMc86A5VbWbX66XhYF58FjwDljXpUvQvO8bV+O0M5lU/Xz799uXpXQZVPXl/m4vFos63Z5NShIqF6bYj6WvN78N4S475y7Z4LpDODR6Z7OQYtL6O1XJ8A5t20wHQOcbP53XvHOfZ7bOdiOAU7Wq/NfF+BwXp8vA4izre335+vPAn5mXk6XW6M5A845bU3U9Z0K58D3W692f8D49u17wRre4XhM0+R9U9b83bU2r0roWfNPrYx9f9mYv4BfL44Z5A69eU8GvLhRz6YAs9YxAV8X1S/T7X/iHICXp6WvB7zXp48YwIsrK0scYCHy7y6A3297N//i/m1XwMvj684m8L7w6wG8f/58XbAL4NfXm5uHAn7VwH0D5z30UUBG/M6A3554NQCvTrR66VwBX79Y79wYgNdHWm3XAt7p84cc4NW55u4C+N2lF6MbwDvvp88H8Mebv+YAb444XwN4r8/bN4Bf3m7fHwM8e9Lp3xbg9fX6pYF7/0H94A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/5R5728AXp+YvRoB3/e6w/E/SuiwKfj/WugbTccAr07Xf526B7w72Nl7ADmny98O0BdaNfT0AAAAAElFTkSuQmCC"/>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBf93p4AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKRSURBVFiF7ZaxbxNREMY/v7vTJo5CAnFFSgRCIXbXREVCYmFAZWhpE6b+BSZWVoYEO0Is7EywIEbEwEC6Vp0QCZHYXbVbLCSKBAKByD/AnXvX4ZpLreTirvS054vudN+973v37vvevXN0zpU8eLw39/w8M8GMc86A5VbWbX66XhYF58FjwDljXpUvQvO8bV+O0M5lU/Xz799uXpXQZVPXl/m4vFos63Z5NShIqF6bYj6WvN78N4S475y7Z4LpDODR6Z7OQYtL6O1XJ8A5t20wHQOcbP53XvHOfZ7bOdiOAU7Wq/NfF+BwXp8vA4izre335+vPAn5mXk6XW6M5A845bU3U9Z0K58D3W692f8D49u17wRre4XhM0+R9U9b83bU2r0roWfNPrYx9f9mYv4BfL44Z5A69eU8GvLhRz6YAs9YxAV8X1S/T7X/iHICXp6WvB7zXp48YwIsrK0scYCHy7y6A3297N//i/m1XwMvj684m8L7w6wG8f/58XbAL4NfXm5uHAn7VwH0D5z30UUBG/M6A3554NQCvTrR66VwBX79Y79wYgNdHWm3XAt7p84cc4NW55u4C+N2lF6MbwDvvp88H8Mebv+YAb444XwN4r8/bN4Bf3m7fHwM8e9Lp3xbg9fX6pYF7/0H94A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz4WwA1uXOfgR4//XW5YF7/of54A5vD9uXBuDNq61XBuDNm+ZfA4wNfHveXgPwbv+5OABvDtt94966ZgIff5z5HOC3z5t9458vzwZgbWj4650BPr36eW4A6335OAN+f7Vz5bADmny98O0BdaNfT0AAAAAElFTkSuQmCC"/>
     <style>
         :root {
             --bg-main: #000000;
@@ -13,6 +13,8 @@
             --border-color: #262626;
             --accent: #5865F2;
             --accent-hover: #4752C4;
+            --danger: #da373c;
+            --danger-hover: #a92b2f;
             --text-main: #f2f3f5;
             --text-muted: #80848e;
             --radius-lg: 16px;
@@ -52,8 +54,8 @@
         .panel-right { background-color: #030303; align-items: center; }
 
         /* UI Elements */
-        .section-card { background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 20px; display: flex; flex-direction: column; gap: 14px; }
-        .section-card-title { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+        .section-card { background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 20px; display: flex; flex-direction: column; gap: 14px; position: relative; }
+        .section-card-title { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: center; }
 
         .input-group { display: flex; flex-direction: column; gap: 6px; }
         .input-group label { font-size: 0.85rem; color: #b5bac1; font-weight: 500; }
@@ -70,6 +72,12 @@
         input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
         input[type="color"]::-webkit-color-swatch { border: 1px solid var(--border-color); border-radius: var(--radius-md); }
 
+        .btn-add-embed { background-color: transparent; border: 2px dashed var(--border-color); color: var(--text-muted); padding: 16px; border-radius: var(--radius-lg); font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: all 0.2s; text-align: center; }
+        .btn-add-embed:hover { border-color: var(--accent); color: var(--text-main); }
+        
+        .btn-delete-embed { background: none; border: none; color: var(--danger); font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: color 0.2s; }
+        .btn-delete-embed:hover { color: var(--danger-hover); }
+
         /* Discord Preview Aesthetics */
         .discord-msg-container { background-color: #313338; border-radius: var(--radius-lg); padding: 16px; display: flex; gap: 16px; width: 100%; max-width: 720px; box-shadow: 0 8px 32px rgba(0,0,0,0.4); margin-top: 20px;}
         .discord-avatar { width: 40px; height: 40px; border-radius: 50%; background-image: url('https://discord.com/assets/c09a1f0529074c4e3374.png'); background-size: cover; flex-shrink: 0; }
@@ -80,7 +88,8 @@
         .discord-text { color: #dbdee1; font-size: 0.9375rem; white-space: pre-wrap; word-break: break-word; line-height: 1.375; }
 
         /* Discord Embed Design */
-        .discord-embed { background-color: #2b2d31; border-left: 4px solid #1e1f22; border-radius: 4px; padding: 12px 16px 16px 16px; display: flex; flex-direction: column; gap: 8px; max-width: 520px; margin-top: 2px; }
+        .discord-embeds-list { display: flex; flex-direction: column; gap: 8px; margin-top: 2px; }
+        .discord-embed { background-color: #2b2d31; border-left: 4px solid #1e1f22; border-radius: 4px; padding: 12px 16px 16px 16px; display: flex; flex-direction: column; gap: 8px; max-width: 520px; }
         .embed-author { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; }
         .embed-author-img { width: 24px; height: 24px; border-radius: 50%; background-size: cover; }
         .embed-author-name { font-size: 0.875rem; font-weight: 600; color: #ffffff; }
@@ -132,62 +141,9 @@
                 </div>
             </div>
 
-            <div class="section-card">
-                <div class="section-card-title">Настройка Embed</div>
-                <div class="row-grid">
-                    <div class="input-group">
-                        <label>Цвет бордера</label>
-                        <input type="color" id="emb-color" value="#5865F2" oninput="updatePreview()">
-                    </div>
-                    <div class="input-group">
-                        <label>Заголовок</label>
-                        <input type="text" id="emb-title" placeholder="Заголовок эмбеда" oninput="updatePreview()">
-                    </div>
-                </div>
-                
-                <div class="input-group">
-                    <label>Описание</label>
-                    <textarea id="emb-desc" placeholder="Описание внутри эмбеда..." oninput="updatePreview()"></textarea>
-                </div>
-                
-                <div class="row-grid">
-                    <div class="input-group">
-                        <label>Имя автора</label>
-                        <input type="text" id="emb-auth-name" placeholder="Имя автора" oninput="updatePreview()">
-                    </div>
-                    <div class="input-group">
-                        <label>Аватар автора (URL)</label>
-                        <input type="url" id="emb-auth-img" placeholder="https://..." oninput="updatePreview()">
-                    </div>
-                </div>
+            <div id="embeds-container" style="display: flex; flex-direction: column; gap: 20px;"></div>
 
-                <div class="input-group">
-                    <label>Поля (Fields)</label>
-                    <div class="embed-field-row">
-                        <input type="text" id="emb-f1-t" placeholder="Имя поля 1" oninput="updatePreview()">
-                        <input type="text" id="emb-f1-v" placeholder="Значение 1" oninput="updatePreview()">
-                    </div>
-                    <div class="embed-field-row">
-                        <input type="text" id="emb-f2-t" placeholder="Имя поля 2" oninput="updatePreview()">
-                        <input type="text" id="emb-f2-v" placeholder="Значение 2" oninput="updatePreview()">
-                    </div>
-                    <div class="embed-field-row">
-                        <input type="text" id="emb-f3-t" placeholder="Имя поля 3" oninput="updatePreview()">
-                        <input type="text" id="emb-f3-v" placeholder="Значение 3" oninput="updatePreview()">
-                    </div>
-                </div>
-
-                <div class="row-grid">
-                    <div class="input-group">
-                        <label>Текст футера</label>
-                        <input type="text" id="emb-foot-text" placeholder="Нижний колонтитул" oninput="updatePreview()">
-                    </div>
-                    <div class="input-group">
-                        <label>Иконка футера (URL)</label>
-                        <input type="url" id="emb-foot-img" placeholder="https://..." oninput="updatePreview()">
-                    </div>
-                </div>
-            </div>
+            <button class="btn-add-embed" id="btn-add-embed" onclick="addEmbedBlock()">+ Добавить Embed блок</button>
 
         </div>
 
@@ -203,25 +159,7 @@
                     
                     <div class="discord-text" id="prev-text" style="display: none;"></div>
 
-                    <div class="discord-embed" id="prev-embed" style="display: none;">
-                        <div class="embed-author" id="prev-emb-author" style="display: none;">
-                            <div class="embed-author-img" id="prev-emb-auth-img"></div>
-                            <span class="embed-author-name" id="prev-emb-auth-name"></span>
-                        </div>
-                        <div class="embed-title" id="prev-emb-title" style="display: none;"></div>
-                        <div class="embed-desc" id="prev-emb-desc" style="display: none;"></div>
-                        
-                        <div class="embed-fields" id="prev-emb-fields" style="display: none;">
-                            <div id="prev-f1" style="display: none;"><div class="embed-field-title" id="prev-f1-t"></div><div class="embed-field-value" id="prev-f1-v"></div></div>
-                            <div id="prev-f2" style="display: none;"><div class="embed-field-title" id="prev-f2-t"></div><div class="embed-field-value" id="prev-f2-v"></div></div>
-                            <div id="prev-f3" style="display: none;"><div class="embed-field-title" id="prev-f3-t"></div><div class="embed-field-value" id="prev-f3-v"></div></div>
-                        </div>
-
-                        <div class="embed-footer" id="prev-emb-footer" style="display: none;">
-                            <img class="embed-footer-img" id="prev-emb-foot-img" src="" alt="" style="display: none;">
-                            <span id="prev-emb-foot-text"></span>
-                        </div>
-                    </div>
+                    <div class="discord-embeds-list" id="prev-embeds-list"></div>
 
                 </div>
             </div>
@@ -230,6 +168,8 @@
     </main>
 
     <script>
+        let embedCount = 0;
+
         // LocalStorage для URL
         const urlInput = document.getElementById('wb-url');
         const savedUrl = localStorage.getItem('ds_wb_url');
@@ -250,20 +190,92 @@
             } else {
                 document.querySelectorAll('.tab-btn')[1].classList.add('active');
                 document.getElementById('panel-view').classList.add('active-panel');
-                updatePreview(); // Обновить при переключении
+                updatePreview();
             }
         }
 
-        // Вспомогательная функция для чистки превью
-        function toggleElem(id, value, showFlex = false) {
-            const el = document.getElementById(id);
-            if (value) {
-                el.innerText = value;
-                el.style.display = showFlex ? 'flex' : 'block';
-                return true;
-            } else {
-                el.style.display = 'none';
-                return false;
+        // Функция добавления нового Embed-блока в конструктор
+        function addEmbedBlock() {
+            if (document.querySelectorAll('.embed-card').length >= 10) {
+                alert('Discord поддерживает максимум 10 Embed-блоков в одном сообщении.');
+                return;
+            }
+
+            embedCount++;
+            const container = document.getElementById('embeds-container');
+            
+            const embedHtml = `
+                <div class="section-card embed-card" id="embed-card-${embedCount}" data-id="${embedCount}">
+                    <div class="section-card-title">
+                        <span>Настройка Embed #${embedCount}</span>
+                        <button class="btn-delete-embed" onclick="deleteEmbedBlock(${embedCount})">Удалить</button>
+                    </div>
+                    <div class="row-grid">
+                        <div class="input-group">
+                            <label>Цвет бордера</label>
+                            <input type="color" class="emb-color" value="#5865F2" oninput="updatePreview()">
+                        </div>
+                        <div class="input-group">
+                            <label>Заголовок</label>
+                            <input type="text" class="emb-title" placeholder="Заголовок эмбеда" oninput="updatePreview()">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Описание</label>
+                        <textarea class="emb-desc" placeholder="Описание внутри эмбеда..." oninput="updatePreview()"></textarea>
+                    </div>
+                    
+                    <div class="row-grid">
+                        <div class="input-group">
+                            <label>Имя автора</label>
+                            <input type="text" class="emb-auth-name" placeholder="Имя автора" oninput="updatePreview()">
+                        </div>
+                        <div class="input-group">
+                            <label>Аватар автора (URL)</label>
+                            <input type="url" class="emb-auth-img" placeholder="https://..." oninput="updatePreview()">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Поля (Fields)</label>
+                        <div class="embed-field-row">
+                            <input type="text" class="emb-f1-t" placeholder="Имя поля 1" oninput="updatePreview()">
+                            <input type="text" class="emb-f1-v" placeholder="Значение 1" oninput="updatePreview()">
+                        </div>
+                        <div class="embed-field-row">
+                            <input type="text" class="emb-f2-t" placeholder="Имя поля 2" oninput="updatePreview()">
+                            <input type="text" class="emb-f2-v" placeholder="Значение 2" oninput="updatePreview()">
+                        </div>
+                        <div class="embed-field-row">
+                            <input type="text" class="emb-f3-t" placeholder="Имя поля 3" oninput="updatePreview()">
+                            <input type="text" class="emb-f3-v" placeholder="Значение 3" oninput="updatePreview()">
+                        </div>
+                    </div>
+
+                    <div class="row-grid">
+                        <div class="input-group">
+                            <label>Текст футера</label>
+                            <input type="text" class="emb-foot-text" placeholder="Нижний колонтитул" oninput="updatePreview()">
+                        </div>
+                        <div class="input-group">
+                            <label>Иконка футера (URL)</label>
+                            <input type="url" class="emb-foot-img" placeholder="https://..." oninput="updatePreview()">
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            container.insertAdjacentHTML('beforeend', embedHtml);
+            updatePreview();
+        }
+
+        // Функция удаления Embed-блока
+        function deleteEmbedBlock(id) {
+            const card = document.getElementById(`embed-card-${id}`);
+            if (card) {
+                card.remove();
+                updatePreview();
             }
         }
 
@@ -272,75 +284,81 @@
             const content = document.getElementById('msg-content').value;
             const prevText = document.getElementById('prev-text');
             
-            // Если контента нет, показываем "заглушку" в превью текста
             if(content) {
                 prevText.innerText = content;
                 prevText.style.display = 'block';
+                prevText.style.color = '#dbdee1';
             } else {
                 prevText.innerText = "Текст сообщения появится здесь...";
                 prevText.style.display = 'block';
-                prevText.style.color = '#72767d'; // muted color for placeholder
+                prevText.style.color = '#72767d';
             }
-            if(content) prevText.style.color = '#dbdee1'; // restore normal color
 
-            // Настройки Embed
-            const embed = document.getElementById('prev-embed');
-            const color = document.getElementById('emb-color').value;
-            embed.style.borderLeftColor = color;
+            const prevEmbedsList = document.getElementById('prev-embeds-list');
+            prevEmbedsList.innerHTML = ''; // Очищаем старые превью эмбедов
 
-            let hasEmbed = false;
+            const embedCards = document.querySelectorAll('.embed-card');
 
-            // Автор
-            const authName = document.getElementById('emb-auth-name').value;
-            const authImg = document.getElementById('emb-auth-img').value;
-            const pAuth = document.getElementById('prev-emb-author');
-            if(authName) {
-                hasEmbed = true;
-                pAuth.style.display = 'flex';
-                document.getElementById('prev-emb-auth-name').innerText = authName;
-                const pAuthImg = document.getElementById('prev-emb-auth-img');
-                if(authImg) {
-                    pAuthImg.style.backgroundImage = `url('${authImg}')`;
-                    pAuthImg.style.display = 'block';
-                } else { pAuthImg.style.display = 'none'; }
-            } else { pAuth.style.display = 'none'; }
+            embedCards.forEach(card => {
+                const color = card.querySelector('.emb-color').value;
+                const title = card.querySelector('.emb-title').value;
+                const desc = card.querySelector('.emb-desc').value;
+                const authName = card.querySelector('.emb-auth-name').value;
+                const authImg = card.querySelector('.emb-auth-img').value;
+                const footText = card.querySelector('.emb-foot-text').value;
+                const footImg = card.querySelector('.emb-foot-img').value;
 
-            // Заголовок и описание
-            if(toggleElem('prev-emb-title', document.getElementById('emb-title').value)) hasEmbed = true;
-            if(toggleElem('prev-emb-desc', document.getElementById('emb-desc').value)) hasEmbed = true;
+                let hasEmbedContent = !!(title || desc || authName || footText);
 
-            // Поля (Fields) - 3 шт
-            let hasFields = false;
-            for(let i=1; i<=3; i++) {
-                const t = document.getElementById(`emb-f${i}-t`).value;
-                const v = document.getElementById(`emb-f${i}-v`).value;
-                const fBlock = document.getElementById(`prev-f${i}`);
-                if(t && v) {
-                    hasEmbed = true; hasFields = true;
-                    fBlock.style.display = 'block';
-                    document.getElementById(`prev-f${i}-t`).innerText = t;
-                    document.getElementById(`prev-f${i}-v`).innerText = v;
-                } else { fBlock.style.display = 'none'; }
-            }
-            document.getElementById('prev-emb-fields').style.display = hasFields ? 'grid' : 'none';
+                // Проверяем поля
+                let fieldsHtml = '';
+                let hasFields = false;
+                for(let i = 1; i <= 3; i++) {
+                    const fTitle = card.querySelector(`.emb-f${i}-t`).value;
+                    const fValue = card.querySelector(`.emb-f${i}-v`).value;
+                    if(fTitle && fValue) {
+                        hasEmbedContent = true;
+                        hasFields = true;
+                        fieldsHtml += `<div><div class="embed-field-title">${fTitle}</div><div class="embed-field-value">${fValue}</div></div>`;
+                    }
+                }
 
-            // Футер
-            const footText = document.getElementById('emb-foot-text').value;
-            const footImg = document.getElementById('emb-foot-img').value;
-            const pFooter = document.getElementById('prev-emb-footer');
-            if(footText) {
-                hasEmbed = true;
-                pFooter.style.display = 'flex';
-                document.getElementById('prev-emb-foot-text').innerText = footText;
-                const pFootImg = document.getElementById('prev-emb-foot-img');
-                if(footImg) {
-                    pFootImg.src = footImg;
-                    pFootImg.style.display = 'block';
-                } else { pFootImg.style.display = 'none'; }
-            } else { pFooter.style.display = 'none'; }
+                if (hasEmbedContent) {
+                    const embedDom = document.createElement('div');
+                    embedDom.className = 'discord-embed';
+                    embedDom.style.borderLeftColor = color;
 
-            // Показываем или скрываем сам блок эмбеда
-            embed.style.display = hasEmbed ? 'flex' : 'none';
+                    let authorHtml = '';
+                    if (authName) {
+                        authorHtml = `
+                            <div class="embed-author">
+                                ${authImg ? `<div class="embed-author-img" style="background-image: url('${authImg}')"></div>` : ''}
+                                <span class="embed-author-name">${authName}</span>
+                            </div>
+                        `;
+                    }
+
+                    let footerHtml = '';
+                    if (footText) {
+                        footerHtml = `
+                            <div class="embed-footer">
+                                ${footImg ? `<img class="embed-footer-img" src="${footImg}">` : ''}
+                                <span>${footText}</span>
+                            </div>
+                        `;
+                    }
+
+                    embedDom.innerHTML = `
+                        ${authorHtml}
+                        ${title ? `<div class="embed-title">${title}</div>` : ''}
+                        ${desc ? `<div class="embed-desc">${desc}</div>` : ''}
+                        ${hasFields ? `<div class="embed-fields" style="display: grid;">${fieldsHtml}</div>` : ''}
+                        ${footerHtml}
+                    `;
+
+                    prevEmbedsList.appendChild(embedDom);
+                }
+            });
         }
 
         // Отправка запроса на Discord API
@@ -354,44 +372,52 @@
             btn.innerText = 'Отправка...';
 
             const payload = { content: document.getElementById('msg-content').value || "" };
-            const embedObj = {};
-            let hasEmbed = false;
+            const embedsArray = [];
 
-            const t = document.getElementById('emb-title').value;
-            const d = document.getElementById('emb-desc').value;
-            if(t) { embedObj.title = t; hasEmbed = true; }
-            if(d) { embedObj.description = d; hasEmbed = true; }
-            
-            embedObj.color = parseInt(document.getElementById('emb-color').value.replace('#', ''), 16);
-            
-            const authName = document.getElementById('emb-auth-name').value;
-            if(authName) {
-                hasEmbed = true;
-                embedObj.author = { name: authName };
-                const authImg = document.getElementById('emb-auth-img').value;
-                if(authImg) embedObj.author.icon_url = authImg;
-            }
+            const embedCards = document.querySelectorAll('.embed-card');
 
-            const fields = [];
-            for(let i=1; i<=3; i++) {
-                const ft = document.getElementById(`emb-f${i}-t`).value;
-                const fv = document.getElementById(`emb-f${i}-v`).value;
-                if(ft && fv) { hasEmbed = true; fields.push({ name: ft, value: fv, inline: true }); }
-            }
-            if(fields.length) embedObj.fields = fields;
+            embedCards.forEach(card => {
+                const embedObj = {};
+                let hasEmbed = false;
 
-            const footText = document.getElementById('emb-foot-text').value;
-            if(footText) {
-                hasEmbed = true;
-                embedObj.footer = { text: footText };
-                const footImg = document.getElementById('emb-foot-img').value;
-                if(footImg) embedObj.footer.icon_url = footImg;
-            }
+                const t = card.querySelector('.emb-title').value;
+                const d = card.querySelector('.emb-desc').value;
+                if(t) { embedObj.title = t; hasEmbed = true; }
+                if(d) { embedObj.description = d; hasEmbed = true; }
+                
+                embedObj.color = parseInt(card.querySelector('.emb-color').value.replace('#', ''), 16);
+                
+                const authName = card.querySelector('.emb-auth-name').value;
+                if(authName) {
+                    hasEmbed = true;
+                    embedObj.author = { name: authName };
+                    const authImg = card.querySelector('.emb-auth-img').value;
+                    if(authImg) embedObj.author.icon_url = authImg;
+                }
 
-            if (hasEmbed) payload.embeds = [embedObj];
+                const fields = [];
+                for(let i = 1; i <= 3; i++) {
+                    const ft = card.querySelector(`.emb-f${i}-t`).value;
+                    const fv = card.querySelector(`.emb-f${i}-v`).value;
+                    if(ft && fv) { hasEmbed = true; fields.push({ name: ft, value: fv, inline: true }); }
+                }
+                if(fields.length) embedObj.fields = fields;
+
+                const footText = card.querySelector('.emb-foot-text').value;
+                if(footText) {
+                    hasEmbed = true;
+                    embedObj.footer = { text: footText };
+                    const footImg = card.querySelector('.emb-foot-img').value;
+                    if(footImg) embedObj.footer.icon_url = footImg;
+                }
+
+                if (hasEmbed) embedsArray.push(embedObj);
+            });
+
+            if (embedsArray.length > 0) payload.embeds = embedsArray;
 
             if(!payload.content && !payload.embeds) {
-                alert('Нельзя отправить пустое сообщение (добавьте текст или Embed).');
+                alert('Нельзя отправить пустое сообщение (добавьте текст или хотя бы один заполненный Embed).');
                 btn.disabled = false; btn.innerText = 'Отправить';
                 return;
             }
@@ -409,7 +435,8 @@
             .finally(() => { btn.disabled = false; btn.innerText = 'Отправить'; });
         }
 
-        updatePreview(); // Инит
+        // Инициализация: создаем первый блок по умолчанию при старте страницы
+        addEmbedBlock();
     </script>
 </body>
 </html>
